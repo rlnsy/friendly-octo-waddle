@@ -6,7 +6,7 @@
   </div>
 </template>
 <script>
-import functions from "../emscripten-example";
+import functions from "../lib";
 export default {
   name: "app",
   components: {},
