@@ -1,3 +1,0 @@
-[submodule "src/emscripten-example"]
-	path = src/emscripten-example
-	url = git@github.com:rlnsy/emscripten-starter.git
