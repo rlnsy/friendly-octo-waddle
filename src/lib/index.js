@@ -1,10 +1,14 @@
 import * as _a_ from "./a.out.js";
 
-const makeFunctions = (Module) => {
+const makeFunctions = (_m_) => {
 	return {
-		add: (a,b) => Module._add(a,b),
+		add: (a,b) => _m_._add(a,b),
 		vfs: {
-				write: (name, data) => Module._vfs_write(name, data),
+				write: (name, data) => {
+					const _name = _m_.allocate(_m_.intArrayFromString(name), _m_.ALLOC_NORMAL)
+					const _data = _m_.allocate(_m_.intArrayFromString(data), _m_.ALLOC_NORMAL)
+					return _m_._vfs_write(_name, _data)
+				},
 		},
 	};
 };

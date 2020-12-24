@@ -2,6 +2,6 @@
 
 int vfs_write(char *name, char *data)
 {
-	// TODO
-	return -1;
+	FILE *_f_ = fopen(name, "w");
+	return fprintf(_f_, "%s", data);
 }
