@@ -3,6 +3,9 @@ import * as _a_ from "./a.out.js";
 const makeFunctions = (Module) => {
 	return {
 		add: (a,b) => Module._add(a,b),
+		vfs: {
+				write: (name, data) => Module._vfs_write(name, data),
+		},
 	};
 };
 
