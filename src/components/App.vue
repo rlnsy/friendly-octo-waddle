@@ -3,7 +3,8 @@
 	<img id="icon" class="icon" src="../images/icon.png">
 	<a target="_blank" href="https://icons8.com/icons/set/pineapple-emoji">Pineapple icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
   <p> 2 + 3 is {{ result }} </p>
-	<b-button @click="testWrite">Button</b-button>
+	<b-button @click="testWrite">write</b-button>
+	<b-button @click="testRead">read</b-button>
   </div>
 </template>
 <script>
@@ -33,6 +34,12 @@ export default {
     testWrite: function() {
 		if (this.lib) {
 			const res = this.lib.vfs.write("test.txt", "Hello");
+			console.log(res)
+		}
+	},
+    testRead: function() {
+		if (this.lib) {
+			const res = this.lib.vfs.read("test.txt");
 			console.log(res)
 		}
 	}
