@@ -1,0 +1,21 @@
+{
+  "name": "emscripten-starter",
+  "version": "0.0.1",
+  "description": "Starter Code for Building C Code Into a WASM/Javascript Module Using Emscripten",
+  "main": "index.js",
+  "scripts": {
+    "build:web": "make web",
+	"build": "make node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlnsy/emscripten-starter.git"
+  },
+  "author": "rlnsy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rlnsy/emscripten-starter/issues"
+  },
+  "homepage": "https://github.com/rlnsy/emscripten-starter#readme",
+  "dependencies": {}
+}
